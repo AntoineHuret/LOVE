@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'd3d1266c92247b10dc14145600afae6de2118dd0a96ce69e96646dc57a670ac18b4dd50e5a5bad0e36e210179ec68ace05c5f415a846953726010979547eeac0'
+  # config.secret_key = '67048419339fa33ece6dd964315a1b9aa7bf5de8cef0aff62096db4128ee46ab442caff6557a1b0bde04aec5ef1e6e7fb4e68fda3b7070437ac1e9b4aed0d5bb'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -24,7 +24,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'huretconseil@example.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -126,7 +126,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'dea409326c32b7af691397230938f4862e2f80272bc2ebe6532a5c9acfc33d48667ba872797f39264a9fd53ce2ed9e91aee1d8beaf4d8bdb712423105b77df78'
+  # config.pepper = '6e6513a1d515ddb54f6be24cef6687d0d65eb499f18c2afd29ccd689ac1429b60bd9b29279998383111915478f598da2850ebbf7567a75337d689f9e0afef3f3'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -263,7 +263,7 @@ Devise.setup do |config|
   # should add them to the navigational formats lists.
   #
   # The "*/*" below is required to match Internet Explorer requests.
-  # config.navigational_formats = ['*/*', :html, :turbo_stream]
+  config.navigational_formats = ['*/*', :html, :turbo_stream]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
